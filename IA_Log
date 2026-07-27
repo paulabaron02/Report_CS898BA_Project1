@@ -1,6 +1,1 @@
-| Date and Time | Prompt | Tool | Response Synopsis | Change |
-| --- | --- | --- | --- | --- |
-| 07/26/2026 11:30 PM | What is the difference between validation and testing in dataset? | ChatGPT | Explained the role of the validation dataset during training and the testing dataset for the final evaluation of the CNN model. | Learn why separate validation and testing datasets in the training pipeline. |
-| 07/25/2026 02:10 PM | How can I run my image preprocessing pipeline with and without adaptive preprocessing for comparison? | ChatGPT | Suggested using a Boolean flag to switch between preprocessing modes while keeping the rest of the pipeline unchanged. | Added an option to execute the project with or without adaptive preprocessing for performance comparison. |
-| 07/25/2026 09:40 AM | How can I determine if an image has low brightness in Python? | ChatGPT | Explained how to estimate image brightness by converting the image to grayscale and calculating the average pixel intensity. | Added an automatic brightness check before applying adaptive preprocessing. |
 
