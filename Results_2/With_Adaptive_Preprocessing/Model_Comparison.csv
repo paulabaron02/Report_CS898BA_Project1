@@ -1,0 +1,3 @@
+Model,Test_Loss,Test_Accuracy
+Baseline CNN,0.1879,0.9597
+Optimized CNN,0.7085,0.9113
