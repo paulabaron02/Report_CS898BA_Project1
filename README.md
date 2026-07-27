@@ -17,13 +17,15 @@ To develop and optimize a computer vision system capable of accurately recognizi
 
 **Introdruction** 
 
-Traffic Sign Recognition (TSR) has become a critical component of Advanced Driver Assistance Systems (ADAS) and autonomous vehicles because it enables vehicles to detect and interpret traffic signs in real time, improving driving safety and decision-making. According to Fu and Huang (2010), TSR systems have been an active research area for decades, and a complete recognition system generally consists of three stages: traffic sign detection, tracking, and classification.
+Traffic Sign Recognition (TSR) is an important part of Advanced Driver Assistance Systems (ADAS) and autonomous vehicles because it allows a vehicle to recognize traffic signs and respond to them automatically. According to Fu and Huang (2010), a traffic sign recognition system is usually divided into three main steps: detection, tracking, and classification.
 
-As autonomous driving technology has evolved, researchers have identified several challenges that affect traffic sign recognition, including illumination changes, weather conditions, motion blur, partial occlusions, and variations in sign appearance. According to Lim et al. (2023), these environmental factors continue to limit the performance of recognition systems and remain one of the main research challenges in the field.
+Recognizing traffic signs is not always easy because the appearance of a sign can change depending on the lighting, weather, motion blur, viewing angle, or if part of the sign is blocked. These challenges have been discussed by Fu and Huang (2010) and continue to be important research problems today (Lim et al., 2023).
 
-Early traffic sign recognition methods relied on traditional computer vision techniques, such as color segmentation, shape analysis, handcrafted feature extraction, and machine learning classifiers including Support Vector Machines (SVMs). However, recent studies indicate that Convolutional Neural Networks (CNNs) have become the preferred approach because they automatically learn relevant visual features from image data and consistently achieve higher recognition accuracy than traditional methods.
+In the past, many traffic sign recognition systems used traditional image processing techniques together with machine learning algorithms such as Support Vector Machines (SVMs). Today, Convolutional Neural Networks (CNNs) are more commonly used because they can automatically learn useful image features and usually achieve better performance on large image datasets (Lim et al., 2023; Islam et al., 2024).
 
-For experimental evaluation, this project will use the German Traffic Sign Recognition Benchmark (GTSRB). According to Stallkamp et al. (2011), GTSRB is one of the most widely used benchmark datasets for traffic sign recognition research, containing more than 50,000 labeled images across 43 traffic sign classes under diverse real-world driving conditions. Based on these studies, this project will investigate how image preprocessing techniques including image resizing, color space conversion, histogram equalization, and normalization can improve traffic sign recognition performance before evaluating and comparing traditional machine learning methods with CNN-based models. This implementation is also supported by the work of Cao et al. (2019), who demonstrated that combining effective image preprocessing with CNN architectures can significantly improve both recognition accuracy and computational performance.
+This project uses the German Traffic Sign Recognition Benchmark (GTSRB), which is one of the most popular datasets for traffic sign recognition research. The dataset contains more than 50,000 images from 43 traffic sign classes collected under different real-world conditions, including changes in lighting, weather, and partial occlusions (Stallkamp et al., 2011).
+
+The goal of this project is to build and evaluate a CNN model for traffic sign classification using a subset of the GTSRB dataset. Different preprocessing techniques, such as image resizing, histogram equalization, adaptive contrast enhancement, and Gaussian filtering, are tested to see how they affect the model's performance. Finally, the results of a baseline CNN are compared with an optimized CNN to determine whether hyperparameter tuning improves the classification accuracy.
 
 **Dataset preparation**
 
@@ -108,10 +110,10 @@ Based on these results, the standard preprocessing pipeline was more effective f
 
 **References**
 
-Cao, Y., Wang, X., Yang, Z., Ye, X., & Wang, X. (2019). An improved convolutional neural network for traffic sign recognition. Procedia Computer Science, 147, 166–171. https://doi.org/10.1016/j.procs.2019.01.210
+Fu, M.-Y., & Huang, Y.-S. (2010). A survey of traffic sign recognition. In Proceedings of the 2010 International Conference on Wavelet Analysis and Pattern Recognition (ICWAPR) (pp. 119–124). IEEE. https://doi.org/10.1109/ICWAPR.2010.5576320
 
-Fu, H., & Huang, K. (2010). A survey of traffic sign recognition. In 2010 International Conference on Wavelet Analysis and Pattern Recognition (ICWAPR) (pp. 119–124). IEEE. https://doi.org/10.1109/ICWAPR.2010.5576320
+Islam, M. S., Pias, M. M., Tasnim, N., Hashan, R., Uddin, J., & Al Mahmud, T. H. (2024). Advancing Traffic Sign Detection and Recognition using Optimized Convolutional Neural Network. In 2024 IEEE International Conference on Computing, Applications and Systems (COMPAS). IEEE. https://doi.org/10.1109/COMPAS60761.2024.10796996
 
-Lim, K., Kim, H., Lee, J., & Kim, C. (2023). Deep learning-based traffic sign recognition: A survey. Sensors, 23(3), 1457. https://doi.org/10.3390/s23031457
+Lim, X. R., Lee, C. P., Lim, K. M., Ong, T. S., Alqahtani, A., & Ali, M. (2023). Recent Advances in Traffic Sign Recognition: Approaches and Datasets. Sensors, 23(10), 4674. https://doi.org/10.3390/s23104674
 
-Stallkamp, J., Schlipsing, M., Salmen, J., & Igel, C. (2011). The German Traffic Sign Recognition Benchmark: A multi-class classification competition. In The 2011 International Joint Conference on Neural Networks (IJCNN) (pp. 1453–1460). IEEE. https://doi.org/10.1109/IJCNN.2011.6033395
+Stallkamp, J., Schlipsing, M., Salmen, J., & Igel, C. (2011). The German Traffic Sign Recognition Benchmark: A Multi-Class Classification Competition. In Proceedings of the International Joint Conference on Neural Networks (IJCNN) (pp. 1453–1460). IEEE. https://doi.org/10.1109/IJCNN.2011.6033395
